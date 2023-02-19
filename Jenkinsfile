@@ -44,11 +44,11 @@ pipeline {
             }
         }
         
-        stage ('S_Parallel_22050069') {
+        stage('S_Parallel_22050069') {
             
             parallel {
-        stage ('S3_22050069')        
-            steps{
+        stage('S3_22050069')        
+            steps {
                 sh """
                 echo "S3_22050069: API Test Completed"
                 """
@@ -71,7 +71,7 @@ pipeline {
         }
 
     }   
-        stage ('S6_22050069') {
+        stage('S6_22050069') {
             steps {
                 sh 'echo "Work release - 22050069"'
             }    
