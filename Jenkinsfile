@@ -53,7 +53,7 @@ pipeline {
             }
                 stage('S4_22050069') {
                     steps {
-                        echo "S4_22050069: DAST Security Completed"'
+                        echo "S4_22050069: DAST Security Completed"
                 }
             }
         }
