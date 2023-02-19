@@ -52,10 +52,10 @@ pipeline {
             }
             
             steps {
-                echo "S5_Print out"            }
-        }
+                echo "S5_Print out"  
+                }
 
-    }   
+            }   
         stage('S6_22050069') {
             steps {
                 sh 'echo "Work release - 22050069"'
