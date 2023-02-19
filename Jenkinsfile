@@ -36,7 +36,7 @@ pipeline {
         stage('S2_22050069') {
             steps {
                 sh 'docker rm 22050069_svr '
-                sh 'docker run -d -it -p 42000:80 --name=22050069_svr 22050112_webimage bash -c "service apache start && sleep 60"'
+                sh 'docker run -d -it -p 42000:80 --name=22050069_svr 22050069_webimage bash -c "service apache start && sleep 60"'
                 sh 'docker start 22050069_svr'
                 sh """
                 echo "S2_22050069: Web Server Creation Completed"
