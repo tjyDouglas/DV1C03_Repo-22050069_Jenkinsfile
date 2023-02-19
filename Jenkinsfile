@@ -47,7 +47,7 @@ pipeline {
         stage('S_Parallel_22050069') {
             
             parallel {
-        stage('S3_22050069')        
+                stage('S3_22050069') {        
             steps {
                 sh """
                 echo "S3_22050069: API Test Completed"
