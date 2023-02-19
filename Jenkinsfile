@@ -73,7 +73,7 @@ pipeline {
     }   
         stage ('S6_22050069') {
             steps {
-                sh 'echo "Work release - 22050069"
+                sh 'echo "Work release - 22050069"'
             }    
         }
 }
