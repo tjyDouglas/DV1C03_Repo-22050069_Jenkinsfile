@@ -48,18 +48,18 @@ pipeline {
             
             parallel {
                 stage('S3_22050069') {        
-            steps {
-                sh """
-                echo "S3_22050069: API Test Completed"
-                """
+                    steps {
+                    sh """
+                    echo "S3_22050069: API Test Completed"
+                    """
+                }
+            }
+                stage('S4_22050069') {
+                    steps {
+                        sh 'echo "S4_22050069: DAST Security Completed"'
+                }
             }
         }
-        stage('S4_22050069') {
-            steps {
-                 sh 'echo "S4_22050069: DAST Security Completed"'
-            }
-        }
-   }
         stage('S5_22050069') {
             input {
                 message "Do you want to release the work?"
